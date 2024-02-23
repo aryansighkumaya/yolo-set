@@ -21,7 +21,7 @@ const FadingComponent = () => {
 
   return (
     <div className={` bg-transparent p-4 mb-4 h-[100vh] flex justify-center items-center`} style={{ opacity, transition: 'opacity 0.1s' }}>
-      <h1 className=' text-center text-indigo-500 text-6xl'>Welcome to the Yollo</h1>
+      <h3 className=' text-center text-white text-5xl text-bold capitalize'>Unleash wanderlust, embrace serendipity</h3>
     </div>
   );
 };

@@ -17,7 +17,7 @@ body::-webkit-scrollbar{
 } */
 
 #main-page::after{
-  background: url('../public/pexels-julia-barthold-1322728.jpg') no-repeat center center/cover;
+  background: url('../public/bg.jpg') no-repeat center center/cover;
 
   content: "";
   position: fixed;

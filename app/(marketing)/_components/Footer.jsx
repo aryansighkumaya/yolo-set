@@ -9,7 +9,7 @@ const Footer = () => {
 <FooterMid />
 <hr className="border bg-gray-300 h-[3px] m-auto w-[87%] dark:bg-gray-500"/>
 <FooterBottom />
-<hr className="border bg-gray-300 h-[3px] m-auto w-[87%] dark:bg-gray-500"/>
+<hr className="border bg-gray-300 h-[1px] m-auto w-[90%] dark:bg-gray-500"/>
 </div>
   )
 }
@@ -24,7 +24,7 @@ export default Footer
       
     <div  className="flex sm:justify-evenly lg:justify-start w-[87%]">
     
-    <div className=" flex flex-col gap-2 ml-5">
+    <div className=" flex flex-col gap-2 lg:ml-20 ml-2">
      <span>Legal</span>
      <div className=" flex flex-col gap-2">
 <Link href={'#'}>
@@ -42,7 +42,7 @@ Intellectual Property
      </div>
     </div>
     
-    <div className=" flex flex-col gap-2 ml-5">
+    <div className=" flex flex-col gap-2 lg:ml-20 ml-2">
      <span>Careers</span>
      <div className="flex flex-col gap-2">
      <Link href={'#'}>
@@ -57,7 +57,7 @@ Cookie Policy
      </div>
     </div>
 
-    <div className=" flex flex-col gap-2 ml-5">
+    <div className=" flex flex-col gap-2 lg:ml-20 ml-2">
      <span>Social</span>
      <div className=" flex gap-2">
  <Link href={'#'}>
