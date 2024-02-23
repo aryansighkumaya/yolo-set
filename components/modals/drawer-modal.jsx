@@ -44,7 +44,7 @@ const DrawerModal = () => {
         width={200}
         height={200}
         objectFit="contain" 
-        className=" dark:hidden"
+        className="block dark:hidden"
       />
 </span>
      </DrawerTitle>
