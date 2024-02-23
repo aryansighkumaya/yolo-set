@@ -9,6 +9,7 @@ const Footer = () => {
 <FooterMid />
 <hr className="border bg-gray-300 h-[3px] m-auto w-[87%] dark:bg-gray-500"/>
 <FooterBottom />
+<hr className="border bg-gray-300 h-[3px] m-auto w-[87%] dark:bg-gray-500"/>
 </div>
   )
 }
@@ -100,7 +101,7 @@ There really is something for everyone on Tinder. Want to get into a relationshi
 
  const FooterBottom = () => {
   return (
-    <div id="bottom" className=" flex text-sm justify-center mb-4">
+    <div id="bottom" className=" flex text-sm justify-center">
 <div className=" flex justify-between w-[85%]">
 <div className=" flex gap-2 flex-col lg:flex-row">
 <span>FAQ /</span><span>Safety Tips /</span><span>Terms /</span> <span>Cookie Policy /</span> <span>Privacy Settings</span>
