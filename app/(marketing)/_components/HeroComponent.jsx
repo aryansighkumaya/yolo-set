@@ -1,5 +1,7 @@
 "use client";
 import { ModeToggle } from "@/components/mode-toggle";
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -30,7 +32,7 @@ const HeroComponent = () => {
           <span>
             <h1 className="text-black dark:text-white text-5xl">Yollo</h1>
           </span>
-          <div className="flex justify-center items-center gap-2 text-xl">
+          <div className="hidden lg:flex justify-center items-center gap-2 text-xl ">
             <span>Products</span>
 
             <span>Learn</span>
@@ -39,9 +41,14 @@ const HeroComponent = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center gap 2 mr-2">
+        <div className="flex justify-center items-center 2 mr-2">
+          <Button className=' lg:hidden'>
+            <Menu size={20}/>
+          </Button>
+          <div className="hidden lg:flex  gap-3">
           <button>login</button>
           <ModeToggle />
+          </div>
         </div>
       </div>
     </div>
