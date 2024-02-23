@@ -11,7 +11,7 @@ const HeroComponent = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      setIsSticky(scrollY <= 650);
+      setIsSticky(scrollY <= 600);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,14 +23,12 @@ const HeroComponent = () => {
 
   return (
     <div
-      className={`bg-transparent text-white flex items-center justify-center h-[100px] ${
-        isSticky ? "sticky top-0 left-0 w-full" : "relative"
-      }`}
+      className={`bg-transparent text-white flex items-center justify-center h-[100px] fixed top-0 left-0 w-full z-30`}
     >
       <div className="w-full h-full flex justify-between items-center hero">
         <div className="flex justify-center items-center gap-3">
           <span>
-            <h1 className="text-black dark:text-white text-5xl">Yollo</h1>
+            <h1 className=" text-white text-5xl">Yollo</h1>
           </span>
           <div className="hidden lg:flex justify-center items-center gap-2 text-xl ">
             <span>Products</span>
