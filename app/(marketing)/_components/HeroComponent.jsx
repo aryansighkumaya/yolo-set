@@ -1,4 +1,5 @@
 "use client";
+import { ModeToggle } from "@/components/mode-toggle";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -27,7 +28,7 @@ const HeroComponent = () => {
       <div className="w-full h-full flex justify-between items-center hero">
         <div className="flex justify-center items-center gap-3">
           <span>
-            <h1 className=" text-5xl">Yollo</h1>
+            <h1 className="text-black dark:text-white text-5xl">Yollo</h1>
           </span>
           <div className="flex justify-center items-center gap-2 text-xl">
             <span>Products</span>
@@ -38,8 +39,9 @@ const HeroComponent = () => {
           </div>
         </div>
 
-        <div className=" mr-2">
+        <div className="flex justify-center items-center gap 2 mr-2">
           <button>login</button>
+          <ModeToggle />
         </div>
       </div>
     </div>
