@@ -25,9 +25,9 @@ const FadingComponent = () => {
       <h3 className=' text-center text-white text-5xl text-bold capitalize'>Unleash wanderlust, embrace serendipity</h3>
 
       <div className="flex flex-col gap-2">
-      <Button className=" bg-[#720455] w-[70vw] lg:w-[300px] rounded-[30px]">Create Account</Button>
+      <Button className=" bg-[#bb8ade] w-[70vw] lg:w-[300px] rounded-[30px]">Create Account</Button>
          
-      <Button className=" bg-[#720455] w-[70vw] lg:hidden rounded-[30px]">Log In</Button>
+      <Button className=" bg-[#bb8ade] w-[70vw] lg:hidden rounded-[30px]">Log In</Button>
          
       </div>
 
