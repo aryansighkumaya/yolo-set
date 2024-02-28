@@ -27,6 +27,8 @@ const HeroComponent = () => {
             <span >Learn</span>
 
             <span >Safety</span>
+
+            <span>About </span>
           </div>
         </div>
 
