@@ -10,7 +10,7 @@ import { Button } from "../ui/button";
 import {  Menu } from "lucide-react";
 import { ImCross } from "react-icons/im";
 
-import HeroMob from "@/app/(marketing)/hero-mob";
+import HeroMob from "@/app/(marketing)/_components/hero-mob";
 import Image from "next/image";
 
 const DrawerModal = () => {

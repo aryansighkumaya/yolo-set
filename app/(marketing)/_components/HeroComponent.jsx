@@ -2,6 +2,7 @@
 import DrawerModal from "@/components/modals/drawer-modal";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
+import { SignInButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +21,7 @@ const HeroComponent = () => {
         alt="Logo"
         width={200}  
         height={250} 
-        objectFit="contain"
+        className=" object-contain"
       />
           </Link>
           <div className="hidden lg:flex justify-center items-center gap-3 text-xl">
@@ -28,22 +29,22 @@ const HeroComponent = () => {
 
             <Link href={"/about"} >Learn</Link>
 
-<<<<<<< HEAD
             <Link href={"/about"} >Safety</Link>
 
             <Link href={"/about"} >About</Link>
-=======
-            <span >Safety</span>
-
-            <span>About </span>
->>>>>>> 0c08c0e266a85e71bb4624cf69a22368c0e2ccb2
           </div>
         </div>
 
         <div className="flex justify-center items-center 2 mr-2">
           <DrawerModal />
           <div className="hidden lg:flex  gap-3">
-          <Button  variant="ghost" className=" rounded-[35px] text-lg text-center">Log In</Button>
+
+          <SignInButton mode="modal">
+          <Button  variant="ghost" className=" rounded-[35px] text-lg text-center">
+            Log In
+          </Button>
+        </SignInButton>
+          
           <ModeToggle />
           </div>
         </div>

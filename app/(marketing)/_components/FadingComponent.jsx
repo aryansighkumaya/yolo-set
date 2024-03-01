@@ -1,5 +1,6 @@
 "use client";
 import { Button } from '@/components/ui/button';
+import { SignInButton, SignUpButton } from '@clerk/nextjs';
 import { useEffect, useState } from 'react';
 
 const FadingComponent = () => {
@@ -25,9 +26,16 @@ const FadingComponent = () => {
       <h3 className=' text-center text-white text-5xl text-bold capitalize'>Unleash wanderlust, embrace serendipity</h3>
 
       <div className="flex flex-col gap-2">
+      <SignUpButton mode='modal'>
       <Button className=" bg-[#bb8ade] w-[70vw] lg:w-[300px] rounded-[30px]">Create Account</Button>
+      </SignUpButton>
          
-      <Button className=" bg-[#bb8ade] w-[70vw] lg:hidden rounded-[30px]">Log In</Button>
+
+      <SignInButton mode="modal">
+      <Button className=" bg-[#bb8ade] w-[70vw] lg:hidden rounded-[30px]">
+        Log In
+      </Button>
+        </SignInButton>
          
       </div>
 
