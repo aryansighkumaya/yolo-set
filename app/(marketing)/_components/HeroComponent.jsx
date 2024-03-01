@@ -3,6 +3,7 @@ import DrawerModal from "@/components/modals/drawer-modal";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroComponent = () => {  
 
@@ -12,7 +13,8 @@ const HeroComponent = () => {
     >
       <div className="w-full h-full flex justify-between items-center hero">
         <div className="flex justify-center items-center">
-          <span className=" mt-[3.5rem]">
+          <Link className=" mt-[3.5rem]"
+          href={`/`}>
           <Image 
         src="/logo.png"
         alt="Logo"
@@ -20,13 +22,15 @@ const HeroComponent = () => {
         height={250} 
         objectFit="contain"
       />
-          </span>
+          </Link>
           <div className="hidden lg:flex justify-center items-center gap-3 text-xl">
-            <span >Products</span>
+            <Link href={"/products"} >Products</Link>
 
-            <span >Learn</span>
+            <Link href={"/about"} >Learn</Link>
 
-            <span >Safety</span>
+            <Link href={"/about"} >Safety</Link>
+
+            <Link href={"/about"} >About</Link>
           </div>
         </div>
 
