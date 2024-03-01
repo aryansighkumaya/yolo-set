@@ -28,9 +28,15 @@ const HeroComponent = () => {
 
             <Link href={"/about"} >Learn</Link>
 
+<<<<<<< HEAD
             <Link href={"/about"} >Safety</Link>
 
             <Link href={"/about"} >About</Link>
+=======
+            <span >Safety</span>
+
+            <span>About </span>
+>>>>>>> 0c08c0e266a85e71bb4624cf69a22368c0e2ccb2
           </div>
         </div>
 

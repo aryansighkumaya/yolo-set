@@ -8,6 +8,10 @@ const HeroMob = () => {
     <span className=" w-full bg-gray-300 dark:bg-black dark:text-white">Learn</span>
 
     <span className=" w-full bg-gray-300 dark:bg-black dark:text-white">Safety</span>
+
+    <span className=" w-full bg-gray-300 dark:bg-black dark:text-white">About</span>
+
+
   </div>
   )
 }
